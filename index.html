@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Cambiar Color de DIV</title>
+    <link rel="stylesheet" href="CSS/styles.CSS">
+</head>
+<body>
+<div class="container">
+    <h1>Cambiar Color de DIV</h1>
+    
+    <div class="card col-3 mt-3 mb-3">
+
+        <div class="card-header d-flex justify-content-center">
+            <!-- Div que cambiará de color -->
+            <div id="colorDiv"></div>
+        </div>
+
+        <div class="card-body">
+            
+            <label for="colorPicker">Elige un color:</label>
+            
+        </div>
+
+        <div class="card-footer text-muted">
+            <!-- Input de tipo color -->
+            <input type="color" id="colorPicker">
+        </div>
+        
+    
+    </div>
+
+    <!-- Etiquetas para mostrar los valores de los formatos de color -->
+    <label for="hexColor">Color (HEX):</label>
+    <input type="text" id="hexColor" readonly>
+    <br>
+    <label for="rgbColor">Color (RGB):</label>
+    <input type="text" id="rgbColor" readonly>
+    <br>
+    <label for="hslColor">Color (HSL):</label>
+    <input type="text" id="hslColor" readonly>
+    <br>
+    <label for="hslaColor">Color (HSLA):</label>
+    <input type="text" id="hslaColor" readonly>
+    <br>
+    <label for="hwbColor">Color (HWB):</label>
+    <input type="text" id="hwbColor" readonly>
+    <br>
+    <label for="cmykColor">Color (CMYK):</label>
+    <input type="text" id="cmykColor" readonly>
+    <br>
+    <label for="rybColor">Color (RYB):</label>
+    <input type="text" id="rybColor" readonly>
+</div>
+
+<script src="JS/main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/color-convert/2.0.1/conversions.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
